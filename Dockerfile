@@ -5,7 +5,8 @@ RUN apt-get update \
     && apt-get install -y \
     dropbear \
     # needed so VS Code can use scp to install itself
-    openssh-client
+    openssh-client \
+    curl
 
 RUN curl -fsSL https://tailscale.com/install.sh | sh
 
